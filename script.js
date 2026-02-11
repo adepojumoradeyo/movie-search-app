@@ -43,9 +43,9 @@ function renderMovies(movies) {
     movieDetails.innerHTML += `
       <div class="movie-card" onclick="showMovieDetails('${movie.imdbID}')">
         <img src="${movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/200x300?text=No+Image"}">
-        <h3>${movie.Title}</h3>
-        <p>${movie.Year}</p>
-        <p>${movie.Type}</p>
+        <h3 class="text-white">${movie.Title}</h3>
+        <p class="text-white">${movie.Year}</p>
+        <p class="text-white">${movie.Type}</p>
       </div>
     `;
   });
