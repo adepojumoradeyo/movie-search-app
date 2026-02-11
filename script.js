@@ -59,7 +59,7 @@ function showMovieDetails(imdbID) {
     .then((movie) => {
       movieDetails.innerHTML = `
         <div class="details">
-        <img src="${movie.Poster !== "N/A" ? movie.Poster : ""}" class="w-80">
+        <img src="${movie.Poster !== "N/A" ? movie.Poster : ""}" class="w-80 px-5">
         <h3 class="text-white text-lg>${movie.Title} (${movie.Year})</h3>
         <p  class="text-white text-sm"><strong>Plot:</strong> ${movie.Plot}</p>
         <p  class="text-white text-sm"><strong>Director:</strong> ${movie.Director}</p>
