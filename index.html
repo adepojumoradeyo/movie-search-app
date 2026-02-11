@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-center bg-black">
+    <h1 class="text-white">Movie Search App</h1>
+
+    <div class="m-20">
+      <input
+        type="text"
+        placeholder="enter movie name"
+        class="movie_title p-5"
+        id="Searchinput"
+      />
+      <button class="searchbtn cursor-pointer py-2 px-6 text-white bg-blue-950">
+        enter
+      </button>
+    </div>
+
+    <div
+      class="moviedetails flex justify-center gap-20 flex-wrap lg:gap-10"
+    ></div>
+
+    <p class="hidden loading">loading.....</p>
+    <p class="hidden error"></p>
+
+    <!-- <div class="results flex">
+        <img src="images/arttower-film-noir-7138980_1280.jpg" alt="" />
+      </div> -->
+
+    <button onclick="goBack()" class="text-white">⬅ Back to Results</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
