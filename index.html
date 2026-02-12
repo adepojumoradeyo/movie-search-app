@@ -8,32 +8,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="text-center bg-black pt-10">
-    <h1 class="text-white">Movie Search App</h1>
+    <h1 class="text-white text-3xl mb-10">Movie Search App</h1>
 
-    <div class="m-5 flex flex-col gap-5 items-center">
+    <div
+      class="px-5 py-4 rounded-full bg-white inline-flex justify-center mb-16"
+    >
       <input
         type="text"
         placeholder="enter movie name"
-        class="movie_title p-5"
-        id="Searchinput"
+        class="movie_title outline-none"
       />
-      <button class="searchbtn cursor-pointer py-2 px-6 text-white bg-blue-950">
-        enter
-      </button>
+      <!-- <button class="searchbtn cursor-pointer bg-blue-700"> -->
+      <img
+        src="images/search-line.svg"
+        alt=""
+        class="searchbtn cursor-pointer w-5"
+      />
+      <!-- </button> -->
     </div>
-
-    <div
-      class="moviedetails flex justify-center gap-20 flex-wrap lg:gap-10"
-    ></div>
 
     <p class="hidden loading">loading.....</p>
     <p class="hidden error"></p>
 
-    <!-- <div class="results flex">
-        <img src="images/arttower-film-noir-7138980_1280.jpg" alt="" />
-      </div> -->
+    <div class="results flex justify-center gap-20 flex-wrap lg:gap-10">
+      <!-- <img src="images/arttower-film-noir-7138980_1280.jpg" alt="" /> -->
+    </div>
+    <div class="moviedetails"></div>
 
-    <button onclick="goBack()" class="text-white">⬅ Back to Results</button>
+    <button onclick="goBack()" class="backbtn text-white mt-7 hidden">
+      ⬅ Back to Results
+    </button>
 
     <script src="script.js"></script>
   </body>
