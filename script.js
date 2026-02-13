@@ -3,10 +3,9 @@
 const API_KEY = "a3433b07";
 const baseUrl = "https://www.omdbapi.com/";
 
-const results = document.querySelector(".results");
-
-const movieTitle = document.querySelector(".movie_title");
+const searchInput = document.querySelector(".searchinput");
 const searchBtn = document.querySelector(".searchbtn");
+const results = document.querySelector(".results");
 const movieDetails = document.querySelector(".moviedetails");
 const backResults = document.querySelector(".backtoresults");
 const backBtn = document.querySelector(".backbtn");
@@ -16,7 +15,7 @@ let searchResults = [];
 // function to search movie names
 async function searchMovies() {
   try {
-    const movieName = movieTitle.value.trim();
+    const movieName = searchInput.value.trim();
 
     if (movieName === "") {
       results.innerHTML = `<p class="text-white">please enter a movie name</p>`;
@@ -104,8 +103,7 @@ function backToResults() {
   movieDetails.textContent = "";
 }
 
-// function to go back home
-function goBack() {
+backBtn.addEventListener("click", () => {
+  backBtn.classList.add("hidden");
   results.textContent = "";
-  backBtn.textContent = "";
-}
+});
