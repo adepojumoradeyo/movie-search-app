@@ -1,6 +1,6 @@
 # Movie Search App
 
-Author: Adepoju Ebunlomo
+Author: Adepoju E. Moradeyo
 
 ## Description
 A movie search application built with Vanilla JavaScript using the OMDb API.
